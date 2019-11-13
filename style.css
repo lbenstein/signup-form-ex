@@ -1,0 +1,57 @@
+/* This is a comment in a CSS document */
+body {
+  background: #ff7978;
+  background-image: url(./images/bg-intro-desktop.png);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1 {
+  font-size: 2.5em;
+}
+input {
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+}
+#other {
+  display: flex;
+  flex-direction: column;
+}
+#offer {
+  background: #5d54a3;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+#form-plus {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#submit {
+  background: #37cc8a;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+#legal {
+  color: #ccc;
+  font-size: 11px;
+  text-align: center;
+}
+#legal a {
+  color: red;
+  font-weight: 800;
+  text-decoration: none;
+}

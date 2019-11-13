@@ -5,32 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" type="text/css" href="style.css">
     <title>Learn to code by watching others</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <h1>Learn to code by watching others</h1>
-  <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
-  <button><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
-  <form>
-  <input type="text" name="firstname"> First Name<br>
-  <input type="text" name="lastname"> Last Name<br>
-  <input type="text" name="email"> Email Address<br>
-  <input type="text" name="password"> Password<br>
-  <button>Claim your free trial</button>
-  <p>By clicking the button, you are agreeing to our <a href="https://help.github.com/en/github/site-policy/github-terms-of-service" target="_blank">Terms and Services</a></p>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/lbenstein" target="_blank">lbenstein</a>.
-    </p>
-  </footer>
+  <main>
+    <section id="intro">
+      <h1>Learn to code by watching others</h1>
+      <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </section>
+  </main>
+  <section id="other">
+    <section id="offer">
+      <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+    </section>
+    <section id="form-plus">
+      <section id="form">
+        <form>
+        <input type="text" name="firstname" placeholder="First Name"><br>
+        <input type="text" name="lastname" placeholder="Last Name"><br>
+        <input type="email" name="email" placeholder="Email Address"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input id="submit" type="submit" name="submit" value="Claim your free trial"><br>
+        </form>
+      </section>
+      <section id="legal">
+        <p>By clicking the button, you are agreeing to our <a href="https://help.github.com/en/github/site-policy/github-terms-of-service" target="_blank">Terms and Services</a></p>
+        <footer>
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/lbenstein" target="_blank">lbenstein</a>.
+          </p>
+        </footer>
+      </section>
+    </section>
+  </section>
 </body>
 </html>
