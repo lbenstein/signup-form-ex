@@ -3,47 +3,62 @@ body {
   background: #ff7978;
   background-image: url(./images/bg-intro-desktop.png);
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  line-height: 1.5;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 100vh;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
+  line-height: 1.1;
 }
 input {
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+form {
   display: flex;
+  flex-direction: column;
+}
+main {
+  width: 45%;
 }
 #intro {
-  display: flex;
-  flex-direction: column;
+  max-width: 50%;
+  font-size: .8rem;
 }
 #other {
-  display: flex;
-  flex-direction: column;
+  width: 35%;
 }
+
 #offer {
   background: #5d54a3;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 3px;
+  border-radius: 6px;
   text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
 }
 #form-plus {
   background: #fff;
   padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
 }
 #submit {
   background: #37cc8a;
   color: #fff;
   text-transform: uppercase;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 6px;
   text-align: center;
+  border-style: solid;
+  border-color: #34b87e;
+  border-width: 1px 1px 2px 1px;
 }
 #legal {
   color: #ccc;
