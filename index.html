@@ -25,10 +25,14 @@
     <section id="form-plus">
       <section id="form">
         <form>
-        <input type="text" name="firstname" placeholder="First Name">
-        <input type="text" name="lastname" placeholder="Last Name">
-        <input type="email" name="email" placeholder="Email Address">
-        <input type="password" name="password" placeholder="Password">
+        <input id="first" type="text" name="firstname" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+        <p class="warning" id="firstname-warning">First name cannot be empty</p>
+        <input id="last" type="text" name="lastname" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+        <p class="warning" id="lastname-warning">Last name cannot be empty</p>
+        <input id="email" type="email" name="email" placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'">
+        <p class="warning" id="email-warning">Looks like this is not an email</p>
+        <input id="pass" type="password" name="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'">
+        <p class="warning" id="password-warning">Password cannot be empty</p>
         <input id="submit" type="submit" name="submit" value="Claim your free trial">
         </form>
       </section>
@@ -43,5 +47,6 @@
       </section>
     </section>
   </section>
-</body>
+  <script src="js/main.js"></script>
+  </body>
 </html>
