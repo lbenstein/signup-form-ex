@@ -27,9 +27,6 @@ input {
   border-style: solid;
   border-width: thin;
   border-color: #ccc;
-  background-image: url('./images/icon-error.svg');
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
 }
 form {
   display: flex;
@@ -121,35 +118,22 @@ main {
   line-height: 0rem;
   text-align: right;
 }
-input {
-  border-color: #ff7978;
-}
 /* warning-off styles */
 #firstname-warning {
-  visibility: hidden;
+  display: none;
 }
 #lastname-warning {
-  visibility: hidden;
+  display: none;
 }
 #email-warning {
-  visibility: hidden;
+  display: none;
 }
 #password-warning {
-  visibility: hidden;
+  display: none;
 }
-#first {
-background-image: none;
-border-color: #ccc;
-}
-#last {
-background-image: none;
-border-color: #ccc;
-}
-#email {
-background-image: none;
-border-color: #ccc;
-}
-#pass {
-background-image: none;
-border-color: #ccc;
+.input-warning{
+  border-color: #ff7978;
+  background-image: url('./images/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
