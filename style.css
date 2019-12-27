@@ -117,18 +117,6 @@ main {
   font-size: .5rem;
   line-height: 0rem;
   text-align: right;
-}
-/* warning-off styles */
-#firstname-warning {
-  display: none;
-}
-#lastname-warning {
-  display: none;
-}
-#email-warning {
-  display: none;
-}
-#password-warning {
   display: none;
 }
 .input-warning{

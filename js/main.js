@@ -19,9 +19,7 @@ that occurs, we should check for valid values in our input fields and display ou
 -Maybe even before you try the conditionals to check your input fields, simply try showing your hidden warnings
 when someone clicks the submit button. Then work from there.
 
-if (firstname.value == null || firstname.value.length === 0) {
-  firstnameW.style.visibility = "visible";
-}
+
 */
 
 var firstname = document.getElementById('first');
@@ -32,11 +30,33 @@ var firstnameW = document.getElementById('firstname-warning');
 var lastnameW = document.getElementById('lastname-warning');
 var emailW = document.getElementById('email-warning');
 var passwordW = document.getElementById('password-warning');
+
+var inputs = document.querySelectorAll('input:not([type="submit"])');
+
 var mySubmit = document.getElementById('submit');
 
 function isEmpty(event){
-  firstname.classList.add('input-warning');
-  firstnameW.style.display = "block";
+  // if the field is empty
+
+for (vInput of inputs){
+  // reset warning styles
+  vInput.nextElementSibling.style.display = "none";
+  vInput.classList.remove('input-warning');
+  // if an input is empty
+  if (vInput.type === 'email' && !vInput.value.includes('@' && '.') || vInput.value === ''){
+      vInput.classList.add('input-warning');
+      vInput.nextElementSibling.style.display = 'block';
+      }
 }
 
+    // Prevent default form submission behavior
+        event.preventDefault();
+}
 mySubmit.addEventListener('click', isEmpty, false);
+
+    // Run same function on blur
+document.addEventListener('blur', function(event) {
+  if (event.target.matches('input:not([type="submit"])')) {
+  isEmpty(event);
+}
+}, true);
